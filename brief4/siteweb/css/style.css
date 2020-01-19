@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    color: white;
+    height: 70px;
+    overflow: hidden;
+    width: auto;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: Raleway;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu p{
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ic{
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    display: none;
+}
+#menucheck{
+    display: none;
+}
+#menucheck:checked ~ .menu{
+    visibility: visible;
+}
+.home{
+    background-image: url("../media/servicesimg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.home .slide h1{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: Raleway;
+}
+.slide{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .slide-c h1{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: Raleway;
+}
+.slide-c{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firsttitle h1{
+    text-align: center;
+    color: #707070;
+    font-size: 38px;
+    font-family: Raleway;
+    padding-top: 3%;
+}
+.firsttitle .laiss{
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 38px;
+    font-family: Raleway;
+    padding-top: 3%;
+}
+.firsttitle h2{
+    text-align: center;
+    color: #707070;
+    font-size: 24px;
+    font-family: Raleway;
+    padding-top: 2%;
+}
+.btn1{
+    text-align: center;
+    margin-top: 5%;
+}
+.btn1 .plusinfos{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Raleway;
+    background-color: #C49D48;
+    padding: 10px 25px;
+}
+.btn1 .plusinfos:hover{
+    cursor: pointer;
+}
+.vol .volarticle{
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    margin-top: 50px;
+}
+.vol .volarticle .volparag{
+    width: 60%;
+    color: #707070;
+    font-size: 36px;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-family: Raleway;
+}
+.vol .volarticle .volparag .parag{
+    color: #707070;
+    font-size: 36px;
+    font-family: Raleway;
+    line-height: 150%;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.vol .volimg{
+    margin-top: 40px;
+   
+    height: 400px;
+}
+.tourism .tourismarticle{
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+.tourism .tourismarticle .tourismparag{
+    width: 60%;
+    color: #707070;
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-family: Raleway;
+}
+.tourism .tourismarticle .tourismparag .parag{
+    color: #707070;
+    font-size: 36px;
+    font-family: Raleway;
+    line-height: 150%;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.tourism .tourismimg{
+    margin-top: 40px;
+    height: 400px;
+}
+.hotel .hotelarticle{
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    
+}
+.hotel .hotelarticle .hotelparag{
+    width: 60%;
+    color: #707070;
+    font-size: 36px;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-family: Raleway;
+}
+.hotel .hotelarticle .hotelparag .parag{
+    color: #707070;
+    font-size: 36px;
+    font-family: Raleway;
+    line-height: 150%;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.hotel .hotelimg{
+    margin-top: 40px;
+    height: 400px;
+}
+.ticket .ticketarticle{
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+.ticket .ticketarticle .ticketparag{
+    width: 60%;
+    color: #707070;
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-family: "Raleway";
+}
+.ticket .ticketarticle .ticketparag .parag{
+    color: #707070;
+    font-size: 36px;
+    font-family: "Raleway";
+    line-height: 150%;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.ticket .ticketimg{
+    margin-top: 40px;
+    height: 400px;
+}
+section#contact{
+    margin-top: 50px;
+    background-image: url(../media/contactbanner.png);
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+}
+section#contact .content{
+    width: 70%;
+    margin: auto;
+}
+section#contact .content h3{
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+section#contact .content p{
+    color: #F6F6F6;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+}
+section#contact .content input{
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+section#contact .content a{
+    background-color: #C49D48;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+    padding: 5px 0;
+    display: inline-block;
+    text-align: center;
+    font-family: Raleway;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+section#contact .content a:hover{
+    background-color: #b8802d;
+}
+.contact{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 50px 10px;
+}
+.contact .forme{
+    display: flex;
+    margin: auto;
+}
+
+.contact .forme .infos-pers{
+    width: 50%;
+    font-size: 34px;
+    font-family: Raleway;
+    margin: auto;
+}
+.contact .forme .sujet-sms{
+    width: 50%;
+    font-size: 34px;
+    font-family: Raleway;
+    margin: auto;
+}
+.contact .forme input{
+    height: 41px;
+    width: 80%;
+    margin-top: 20px;
+}
+.textarea-form{
+    height: 341px;
+    width: 80%;
+    margin-top: 20px;
+}
+label{
+    margin-top: 20px;
+}
+.contact .forme .sujet-sms input{
+    height: 165px;
+    width: 80%;
+}
+.contact .forme .sujet-sms .message input{
+    height: 340px;
+}
+.star{
+    color: red;
+}
+.nom{
+    margin-top: 40px;
+}
+.prenom{
+    margin-top: 40px;
+}
+.email{
+    margin-top: 40px;
+}
+.telephone{
+    margin-top: 40px;
+}
+.ville{
+    margin-top: 40px;
+}
+.sujet{
+    margin-top: 40px;
+}
+.message{
+    margin-top: 40px;
+}
+.map-infos .map-title h1{
+    text-align: center;
+    color: black;
+    font-size: 38px;
+    font-family: Raleway;
+    padding-top: 3%;
+}
+.map-infos .map-title h2{
+    text-align: center;
+    color: #707070;
+    font-size: 24px;
+    font-family: Raleway;
+    padding-top: 2%;
+}
+.map-cord{
+    background-image: url("../media/map.png");
+    background-size: cover;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+}
+.map-cord .maps{
+    margin: auto;
+}
+.map-cord .map{
+    padding-top:30px;
+}
+.map-cord .cord{
+    text-align: center;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
+.map-cord .cord .nos-cord{
+    font-size: 34px;
+    font-family: Raleway;
+    color: black;
+}
+.map-cord .cord .cord-titre{
+    font-size: 24px;
+    color: rgb(41, 41, 41);
+    margin-top: 15px;
+}
+.map-cord .cord .cord-infos{
+    font-size: 18px;
+    color: rgb(95, 95, 95);
+    font-family: Raleway;
+}
+.subscription{
+    height: 250px;
+    width: 100%;
+    background-image: url("./ami.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: white; 
+}
+.content{
+    width: 80%;
+    margin: auto;
+    line-height: 3em;
+    padding-top: 15PX;
+}
+.last{
+    display: flex;
+    margin: auto;
+    justify-content: SPACE-EVENLY;
+    width: 95%;
+    line-height: 28px;
+    margin-top: 5%;
+}
+.inputs{
+  display: flex;
+  justify-content: space-between;
+}
+.inputs i{
+    font-size: 25px;
+}
+.d4 p{
+    margin-bottom: 30px;
+}
+.last .d1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.d1 p{
+    width:90%;
+}
+.d2 {
+    width: 20%;
+}
+.d4{
+    width:25%;
+}
+.last .d2 li {
+  list-style-type: none;
+}
+footer{
+    height: 40px;
+    margin: auto;
+    background-color: #688095;
+    padding: 10px 10%;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+footer div{
+    width: 50%;
+    display: inline-block;
+}
+footer a{
+    margin-left: 14px;
+}
+
+
+
+
+
+

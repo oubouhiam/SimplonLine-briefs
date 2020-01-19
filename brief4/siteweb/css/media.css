@@ -1,0 +1,391 @@
+@media (min-width:200px) and (max-width:1200px){
+    .menu{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        background-color: white;
+        color: black;
+        width: 90%;
+        display: none;
+        }
+    .menu li{
+        display: block;
+    }
+    .menu li a{
+        text-decoration: none;
+        color:black;
+        font-family: Raleway;
+    }
+    .header{
+        flex-direction:column;
+    }
+    .ic{
+        display: block;
+    }
+    .menu{
+        font-size: small;
+    }
+    .center h1 {
+        font-size: 60px;
+    }
+    .home .slide h1{
+        font-size: 60px;   
+    }
+    .home .slide-c h1{
+        font-size: 50px;
+    }
+    .vol .volarticle{
+        display: block;
+        width: 100%;
+    }
+    .vol .volarticle .volparag{
+        width: 100%;
+        text-align: center;
+        color: #707070;
+        font-size: 30px;
+        margin-top: 20px !important;
+        font-family: Raleway;
+        margin: auto; 
+    }
+    .vol .volarticle .volparag .parag{
+        color: #707070 !important;
+        font-size: 30px;
+        font-family: Raleway;
+        line-height: 150%;
+        margin-top: 50px !important;
+        margin: auto;     
+    }
+    .volparag2{
+        width: 100%;
+    }
+    .vol .volimg{
+        width: 60%;
+        max-width: 315px;
+        height: 300px;
+        margin: auto;
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .tourism .tourismarticle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .tourism .tourismarticle .tourismparag{
+        width: 100%;
+        text-align: center;
+        color: #707070;
+        font-size: 30px;
+        margin-top: 80px;
+        font-family: Raleway;
+        margin-top: 30px !important;
+        margin: auto;
+    }
+    .tourismparag2{
+    width: 100%;
+    }
+    .tourism .tourismarticle .tourismparag .parag{
+        color: #707070 !important;
+        font-size: 30px;
+        font-family: Raleway;
+        line-height: 150%;
+        margin-top: 50px !important;
+        margin: auto;
+    }
+    .tourism .tourismimg{
+        width: 60%;
+        max-width: 315px;
+        height: 300px;
+        margin: auto;
+        display: block;
+    }
+    .hotel .hotelarticle{
+        display: block;
+        width: 100%;
+    }
+    .hotel .hotelarticle .hotelparag{
+        width: 100%;
+        text-align: center;
+        color: #707070;
+        font-size: 30px;
+        font-family: Raleway;
+        margin: auto;    
+    }
+    .hotel .hotelarticle .hotelparag .parag{
+        color: #707070 !important;
+        font-size: 30px;
+        font-family: Raleway;
+        line-height: 150%;
+        margin-top: 50px !important;
+        margin: auto;     
+    }
+    .hotelparag2{
+        width: 100%;
+    }
+    .hotel .hotelimg{
+        width: 60%;
+        max-width: 315px;
+        height: 300px;
+        margin: auto;
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .ticket .ticketarticle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ticket .ticketarticle .ticketparag{
+        width: 100%;
+        text-align: center;
+        color: #707070;
+        font-size: 30px;
+        margin-top: 80px;
+        font-family: Raleway;
+        margin-top: 30px !important;
+        margin: auto;
+    }
+    .ticketparag2{
+        width: 100%;
+    }
+    .ticket .ticketarticle .ticketparag .parag{
+        color: #707070 !important;
+        font-size: 30px;
+        font-family: Raleway;
+        line-height: 150%;
+        margin-top: 50px !important;
+        margin: auto;
+    }
+    .ticket .ticketimg{
+        width: 60%;
+        max-width: 315px;
+        height: 300px;
+        margin: auto;
+        display: block;
+    }
+    .contact .forme{
+        display: block;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    /* .contact .forme .infos-pers{
+        margin-left: 10px;
+    } */
+    /* .contact .forme .sujet-sms{
+        margin-left: 10px;
+    } */
+    .contact .forme input{
+        width: 100%;
+    }
+    .contact .forme .sujet-sms input{
+        width: 100%;
+    }
+    .textarea-form{
+        width: 100%;
+    }
+    section#contact .content{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    section#contact .content input{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    section#contact .content a{
+        width: 145px;
+    }
+section#contact .content h3{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+section#contact .content p{
+    color: #F6F6F6;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+}
+section#contact .content input{
+    width: 79%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+section#contact .content a{
+    background-color: #C49D48;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 30%;
+    padding: 10px 0;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    transition: all .3s ease-out;
+}
+section#contact .content a:hover{
+    background-color: #b8802d;
+}
+.map-cord{
+    margin-top: 5%;
+    height: 970px;
+}
+.map-cord{
+    flex-direction: column-reverse;
+}
+.btn1{
+    text-align: center;  
+}
+.btn1 .plusinfos{
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+
+
+}
+
+@media (max-width:1024px)
+{
+    .menu{
+        font-size: small;
+    }
+    
+}
+@media (max-width:800px)
+{
+    .menu{
+        visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 90%;
+    position: absolute;
+    top: 40px;
+    z-index: 9;
+
+    }
+    .menu ul{
+        width: 100%;
+        padding-top: 5px;
+    }
+    .menu li{
+        display: block;
+        font-size: 30px;
+        margin: auto;
+        margin-bottom: 17px;
+        border-bottom: black solid;
+        
+    }
+    .menu p {
+        text-align: center;
+        font-size: 17px;
+        
+    }
+    .header{
+        flex-direction:column;
+        height: auto;
+        overflow: initial;
+    }
+    .ic{
+        display: block;
+    }
+}
+
+@media (max-width:800px)
+{
+    .map-cord .map{
+        width: auto;
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer div{
+        width: 100%;
+        
+    }
+    footer .copy{
+        margin-top: 10px;
+    }
+
+}
+@media(max-width:750px){
+    
+    
+    .subscription a{
+        width: max-content;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .subscription{
+        height: auto;
+    }
+    .subscription input
+    {
+        width: 100%;
+    }
+    .inputs{
+        
+        flex-direction: column;
+    }
+    .last .d1{
+        flex-direction: column-reverse;
+        width: 90%;
+        text-align: center;
+    }
+    .last .d2{
+        width: 90%;
+        text-align: center;
+        
+    }
+    .last .d2 li {
+        list-style-type: none;
+    }
+
+    .last .d4{
+        width: 90%;
+        text-align: center;
+    }
+    .last{
+        flex-direction: column;
+        align-items: center;    
+    }
+ 
+}
+@media (max-width:500px)
+{
+    .center h1 {
+        font-size: 30px;
+    }
+    .center{
+        width: 90%;
+    }
+    .center p{
+        font-size: smaller;
+    }
+    .subscription a{
+        font-size: smaller;
+    }
+    .inputs i{
+        font-size: 20px;
+    }
+  
+}
+
+
+    
