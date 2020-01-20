@@ -3,8 +3,8 @@
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
         width: 90%;
         display: none;
         }
@@ -13,7 +13,7 @@
     }
     .menu li a{
         text-decoration: none;
-        color:black;
+        color:white;
         font-family: Raleway;
     }
     .header{
@@ -270,8 +270,8 @@ section#contact .content a:hover{
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color:black;
+    color: white;
     width: 90%;
     position: absolute;
     top: 40px;
@@ -287,7 +287,7 @@ section#contact .content a:hover{
         font-size: 30px;
         margin: auto;
         margin-bottom: 17px;
-        border-bottom: black solid;
+        border-bottom: white solid;
         
     }
     .menu p {
