@@ -1,29 +1,41 @@
-@media (min-width:200px) and (max-width:1200px){
+@media (max-width:1200px){
     .menu{
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-        background-color: black;
-        color: white;
-        width: 90%;
-        display: none;
-        }
+        visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color:black;
+    color: white;
+    width: 90%;
+    position: absolute;
+    top: 40px;
+    z-index: 9;
+
+    }
+    .menu ul{
+        width: 100%;
+        padding-top: 5px;
+    }
     .menu li{
         display: block;
+        font-size: 30px;
+        margin: auto;
+        margin-bottom: 17px;
+        border-bottom: white solid;
+        
     }
-    .menu li a{
-        text-decoration: none;
-        color:white;
-        font-family: Raleway;
+    .menu p {
+        text-align: center;
+        font-size: 17px;
+        
     }
     .header{
         flex-direction:column;
+        height: auto;
+        overflow: initial;
     }
     .ic{
         display: block;
-    }
-    .menu{
-        font-size: small;
     }
     .center h1 {
         font-size: 60px;
@@ -168,12 +180,6 @@
         width: 100%;
         text-align: center;
     }
-    /* .contact .forme .infos-pers{
-        margin-left: 10px;
-    } */
-    /* .contact .forme .sujet-sms{
-        margin-left: 10px;
-    } */
     .contact .forme input{
         width: 100%;
     }
@@ -265,48 +271,6 @@ section#contact .content a:hover{
 }
 @media (max-width:800px)
 {
-    .menu{
-        visibility: hidden;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    background-color:black;
-    color: white;
-    width: 90%;
-    position: absolute;
-    top: 40px;
-    z-index: 9;
-
-    }
-    .menu ul{
-        width: 100%;
-        padding-top: 5px;
-    }
-    .menu li{
-        display: block;
-        font-size: 30px;
-        margin: auto;
-        margin-bottom: 17px;
-        border-bottom: white solid;
-        
-    }
-    .menu p {
-        text-align: center;
-        font-size: 17px;
-        
-    }
-    .header{
-        flex-direction:column;
-        height: auto;
-        overflow: initial;
-    }
-    .ic{
-        display: block;
-    }
-}
-
-@media (max-width:800px)
-{
     .map-cord .map{
         width: auto;
     }
@@ -325,8 +289,6 @@ section#contact .content a:hover{
 
 }
 @media(max-width:750px){
-    
-    
     .subscription a{
         width: max-content;
         margin-top: 10px;
