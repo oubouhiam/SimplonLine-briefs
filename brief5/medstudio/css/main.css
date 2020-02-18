@@ -1,0 +1,1039 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+body #backtrans {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
+  position: fixed;
+  display: none;
+}
+
+body .nav-bar {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 101;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    overflow: initial;
+    height: auto;
+  }
+}
+
+body .nav-bar .logo {
+  float: left;
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .logo {
+    margin: auto;
+  }
+}
+
+body .nav-bar .logo .log {
+  width: 80px;
+  height: 75px;
+}
+
+body .nav-bar #menucheck {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar #menucheck:checked ~ .menu {
+    display: block;
+  }
+  body .nav-bar #menucheck:not(:checked) ~ .menu {
+    display: none;
+  }
+}
+
+body .nav-bar .lbl {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .lbl {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+  }
+}
+
+body .nav-bar .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 205px;
+    margin: auto;
+    z-index: 9;
+    position: fixed;
+    top: 78px;
+    border-bottom-right-radius: 50px 50px;
+    background-color: #000000a8;
+  }
+}
+
+body .nav-bar .menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  margin-right: 60px;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .menu ul {
+    display: block;
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .menu ul li {
+    padding: 10px 0px;
+    border: white solid;
+    border-radius: 50px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+body .nav-bar .menu ul li a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0;
+  }
+}
+
+body .nav-bar .menu ul .inscr {
+  padding: 18px;
+  border: solid;
+  border-radius: 50px;
+  border-color: #DFB362;
+}
+
+body .nav-bar .menu ul .inscr:hover {
+  color: #DFB362;
+  background-color: rgba(255, 255, 255, 0.384);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  body .nav-bar .menu ul .inscr {
+    border: none;
+    padding-bottom: 10px;
+  }
+  body .nav-bar .menu ul .inscr:hover {
+    color: #ac7f2c;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+}
+
+body .home {
+  width: 100%;
+  height: 700px;
+}
+
+body .home .slider #slide {
+  width: 100%;
+  height: 658px;
+  background-size: cover;
+}
+
+body .home .infos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+body .home .infos .Content {
+  position: absolute;
+  z-index: 1;
+  top: 27%;
+  color: white;
+  margin-left: 100px;
+}
+
+@media (max-width: 900px) {
+  body .home .infos .Content {
+    text-align: center;
+    margin-left: auto;
+    white-space: normal;
+    width: 100%;
+  }
+}
+
+body .home .infos .Content h1 {
+  font-size: 60px;
+  color: #DCBA7B;
+}
+
+@media (max-width: 900px) {
+  body .home .infos .Content h1 {
+    text-align: center;
+    margin-left: auto;
+    white-space: normal;
+    font-size: 40px;
+  }
+}
+
+body .home .infos .Content P {
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  body .home .infos .Content P {
+    text-align: center;
+    margin-left: auto;
+    white-space: normal;
+    font-size: 18px;
+  }
+}
+
+body .home .infos .Content a {
+  font-size: 18px;
+  border: solid #DFB362;
+  border-radius: 50px;
+  margin-left: 40px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  margin-top: 42px;
+  display: block;
+  width: 25%;
+  text-align: center;
+}
+
+body .home .infos .Content a:hover {
+  color: #DFB362;
+  background-color: rgba(255, 255, 255, 0.384);
+}
+
+@media (max-width: 900px) {
+  body .home .infos .Content a {
+    text-align: center;
+    margin: auto;
+    white-space: normal;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+body #btns1 {
+  font-size: 40px;
+  position: relative;
+  top: -400px;
+  color: white;
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  margin-left: 15px;
+}
+
+body #btns1:hover {
+  color: #DFB362;
+  -webkit-box-shadow: white;
+          box-shadow: white;
+}
+
+body #btns2 {
+  font-size: 40px;
+  position: relative;
+  top: -400px;
+  color: white;
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  float: right;
+  margin-right: 15px;
+}
+
+body #btns2:hover {
+  color: #DFB362;
+  -webkit-box-shadow: white;
+          box-shadow: white;
+}
+
+body .service {
+  text-align: center;
+  font-size: 60px;
+  color: #DFB362;
+  margin-left: 25px;
+}
+
+body .article {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.548);
+}
+
+body .article .camera-article {
+  text-align: center;
+  margin: auto;
+}
+
+body .article .camera-article h1 {
+  color: black;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+body .article .camera-article .img {
+  width: 90%;
+  height: 260px;
+  margin: auto;
+}
+
+body .article .camera-article .border {
+  background-color: #DFB362;
+  width: 90px;
+  height: 5px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+body .article .camera-article .parag1 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+}
+
+body .article .camera-article .services .reserv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  height: 600px;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  body .article .camera-article .services .reserv {
+    display: block;
+    height: auto;
+  }
+}
+
+body .article .camera-article .services .reserv .items {
+  width: 19%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  body .article .camera-article .services .reserv .items {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  body .article .camera-article .services .reserv .items img {
+    width: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  body .article .camera-article .services .reserv .items img {
+    width: 300px;
+  }
+}
+
+body .article .camera-article .services .reserv .items p {
+  font-size: 22px;
+  color: #DFB362;
+}
+
+body .article .camera-article .services .reserv .items .prix {
+  font-size: 14;
+  color: black;
+  padding: 10px;
+}
+
+body .article .camera-article .services .reserv .items button {
+  color: black;
+  font-size: 14px;
+  background-color: #DFB362;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+body .article .camera-article .services .reserv .items button:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.548);
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  cursor: pointer;
+}
+
+body .article .article1 {
+  width: 100%;
+}
+
+body .article .article1 h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #DFB362;
+}
+
+body .article .article1 .line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 349px;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  body .article .article1 .line1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+body .article .article1 .line1 #img1 {
+  -ms-flex-preferred-size: 78%;
+      flex-basis: 78%;
+}
+
+body .article .article1 .line1 #img1 img {
+  width: 100%;
+  height: 100%;
+}
+
+body .article .article1 .line1 #img1 #img2 {
+  -ms-flex-preferred-size: 29%;
+      flex-basis: 29%;
+}
+
+body .article .article1 .line1 #img1 #img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+body .article .article1 .line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 349px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  position: relative;
+  top: 8px;
+}
+
+@media (max-width: 900px) {
+  body .article .article1 .line2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+body .article .article1 .line2 #imgs1 {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+body .article .article1 .line2 #imgs1 img {
+  width: 100%;
+  height: 95%;
+}
+
+body .article .article1 .line2 #imgs2 {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+body .article .article1 .line2 #imgs2 img {
+  width: 100%;
+  height: 95%;
+}
+
+body .article .article1 .line2 #imgs3 {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+body .article .article1 .line2 #imgs3 img {
+  width: 100%;
+  height: 95%;
+}
+
+body .article .services .reserv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  height: 700px;
+  margin: auto;
+}
+
+body .article .services .reserv .items {
+  width: 19%;
+  margin: auto;
+  text-align: center;
+}
+
+body .article .services .reserv .items p {
+  font-size: 30px;
+  color: #DFB362;
+}
+
+body .article .services .reserv .items button {
+  color: black;
+  font-size: 18px;
+  background-color: #DFB362;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+body .article .services .reserv .items button:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.548);
+  -webkit-box-shadow: black;
+          box-shadow: black;
+}
+
+body .confirmation-fenetre {
+  background-color: #dfb362;
+  width: 40%;
+  margin: auto;
+  border: none;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media (max-width: 900px) {
+  body .confirmation-fenetre {
+    width: 80%;
+  }
+}
+
+body .confirmation-fenetre #affichage {
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+body .confirmation-fenetre .titre-R {
+  text-align: center;
+  font-size: 30px;
+}
+
+body .confirmation-fenetre .close {
+  margin-left: 20px;
+}
+
+body .confirmation-fenetre .btn-reserv {
+  height: 50px;
+  width: 200px;
+  background: #DFB362;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 50px;
+  -webkit-box-shadow: 0px 0px 10px #131313;
+          box-shadow: 0px 0px 10px #131313;
+  display: block;
+  margin: 0 auto;
+}
+
+body .reservation-fenetre {
+  background-color: rgba(223, 179, 98, 0.877);
+  width: 80%;
+  margin: auto;
+  border: none;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+body .reservation-fenetre .titre-R {
+  text-align: center;
+  font-size: 30px;
+}
+
+body .reservation-fenetre .close {
+  margin-left: 20px;
+  position: absolute;
+}
+
+body .reservation-fenetre .reservation-forme {
+  width: 95%;
+  display: block;
+  margin: auto;
+}
+
+body .reservation-fenetre .reservation-forme .personelles-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .reservation-fenetre .reservation-forme .personelles-infos .pers-infos {
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-forme .personelles-infos .pers-infos {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+body .reservation-fenetre .reservation-forme .personelles-infos .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  margin-left: 70px;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-forme .personelles-infos .line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+}
+
+body .reservation-fenetre .reservation-forme .personelles-infos .line .infos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .reservation-fenetre .reservation-forme .personelles-infos .line .infos .titre {
+  padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-forme .personelles-infos .line .infos .titre {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+body .reservation-fenetre .reservation-forme .personelles-infos .line .infos input {
+  width: 80%;
+  height: 30px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-forme .personelles-infos .line .infos input {
+    width: 100%;
+    padding: 0;
+    height: 28px;
+  }
+}
+
+body .reservation-fenetre .reservation-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .reservation-fenetre .reservation-details .pers-infos {
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-details .pers-infos {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+body .reservation-fenetre .reservation-details .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  margin-left: 70px;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-details .line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+}
+
+body .reservation-fenetre .reservation-details .line .infos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .reservation-fenetre .reservation-details .line .infos .titre {
+  padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-details .line .infos .titre {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+body .reservation-fenetre .reservation-details .line .infos input {
+  width: 80%;
+  height: 30px;
+  padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .reservation-details .line .infos input {
+    width: 100%;
+    padding: 0;
+    height: 28px;
+  }
+}
+
+body .reservation-fenetre .btn-reserv {
+  height: 50px;
+  width: 200px;
+  background: #DFB362;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 50px;
+  -webkit-box-shadow: 0px 0px 10px #131313;
+          box-shadow: 0px 0px 10px #131313;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  body .reservation-fenetre .btn-reserv {
+    line-height: 20px;
+    width: 150px;
+  }
+}
+
+body .inscription {
+  width: 60%;
+  background-color: rgba(223, 179, 98, 0.308);
+  margin: auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .inscription .imginscr {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  body .inscription .imginscr {
+    display: none;
+  }
+}
+
+body .inscription .imginscr img {
+  width: 300px;
+  height: 280px;
+  margin-left: 70px;
+  margin-top: 150px;
+}
+
+body .inscription .inscrip {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  body .inscription .inscrip {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+body .inscription .forme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+}
+
+@media (max-width: 900px) {
+  body .inscription .forme {
+    margin: auto;
+  }
+}
+
+body .inscription button {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #DFB362;
+  border: solid white 2px;
+  border-radius: 40px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+body .inscription button:hover {
+  background-color: rgba(255, 255, 255, 0.295);
+  color: #e7ab3c;
+  cursor: pointer;
+}
+
+body .inscription div {
+  padding: 18px;
+  width: 95%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  body .inscription div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 10px 70px;
+  }
+}
+
+body .inscription div label {
+  width: 50%;
+  font-size: 20px;
+}
+
+body .inscription div input {
+  width: 50%;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.637);
+  border: solid #d8a952;
+  border-radius: 20px;
+  padding: 6px 5px;
+}
+
+body .footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  body .footer {
+    padding: 40px 0;
+  }
+}
+
+body .footer .colum2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+body .footer .colum2 .contact {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  margin: auto;
+}
+
+body .footer .colum2 .contact h1 {
+  color: rgba(245, 197, 108, 0.815);
+  padding: 20px;
+}
+
+body .footer .colum2 .contact h2 {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+body .footer .colum2 .contact .icons {
+  font-size: 20px;
+  position: relative;
+}
+
+body .footer .colum2 .contact .icons i {
+  padding: 5px 15px;
+  color: #DFB362;
+}
+
+body .copyright {
+  width: 100%;
+  background-color: #DFB362;
+}
+
+body .copyright p {
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.blank {
+  width: 100%;
+  height: 100px;
+}
+
+.camera {
+  width: 100%;
+  height: 350px;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+}
+/*# sourceMappingURL=main.css.map */

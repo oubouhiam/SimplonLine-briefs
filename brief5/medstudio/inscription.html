@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="backtrans"></div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img class="log" src="media/logo.png">
+        </div>
+        <input type="checkbox" id="menucheck">
+        <label for="menucheck" class="lbl">
+            <div class="ic">
+                <i class="fa fa-bars" style="font-size:36px;color: white;"></i>
+            </div>
+        </label>
+        <div class="menu">
+            <ul>
+                <li class="link-page"><a class="home" href="home.html">Accueil</a></li>
+                <li class="link-page"><a class="resev" href="reservation.html">Réservation</a></li>
+                <li class="link-page"><a class="inscr" href="inscription.html">Inscription</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="slider">
+            <div id="slide-items">
+                <div id="items-active">
+                    <img id="slide" src="media/background/back.jpg">
+                </div> 
+            </div>
+        </div>
+            <i id="btns1" class="fa fa-angle-left" onclick="ChangeSlide()"></i>
+            <i id="btns2" class="fa fa-angle-right" onclick="ChangeSlide()"></i>
+        <div class="infos">   
+            <div class="Content">
+                <h1 class="titre1">Sonorisation <br>
+                    Matériel audio
+                </h1>
+                <p class="parag1">Préparer. Capter. 
+                    Mettre à disposition.
+                </p>
+                <a class="inscri-toi" href="inscription.html">Inscri-Toi</a>
+            </div> 
+        </div>
+    </section>
+    <div class="blank"></div>
+    <section class="inscription">
+        <div class="imginscr">
+            <img src="media/logo.png" alt="">
+        </div>
+        <br>
+        <div class="forme">
+            <h1 class="inscrip">Inscription</h1>
+            <div>
+                <label> Username </label>
+                <input type="text" placeholder="Username" id="nom" >
+            </div>
+            <div>
+                <label> Nom et Prénom </span></label>
+                <input type="text" placeholder="Prénom" id="prenom" >
+            </div>
+            <div>
+                <label> Email </label>
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div>
+                <label> Mot de passe </label>
+                <input type="password" placeholder="Mot de passe" id="motedepasse" >
+            </div>
+            <div>
+                <label> confirmation </label>
+                <input type="password" placeholder="Mot de passe" id="confirmation">
+            </div>
+            <button type="submit" class="submit" onclick="inscrir()"> Inscrit</button>  
+        </div>
+    </section>
+    <div class="blank"></div>
+    <section class="footer">
+        <div class="colum2">
+            <div class="contact">
+                <h1>Nous contacter</h1>
+                <h2>Email : contact@medstudio.ma</h2>
+                <h2>Tel : +212 111 232 313  | +212 678 446 374</h2>
+                <h2>Adresse : 34, Rue Charam Achaykh | 20340 Casablanca, <br>
+                     Maroc </h2>
+                <div class="icons">
+                    <a class="icons" href=""><i class="fa fa-facebook-f"></i><i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <div class="copyright">
+        <p>©2020 Med Studio Maroc - Location Matériel Audiovisuel Pro </p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

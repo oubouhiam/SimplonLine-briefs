@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="backtrans"></div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img class="log" src="media/logo.png">
+        </div>
+        <input type="checkbox" id="menucheck">
+        <label for="menucheck" class="lbl">
+            <div class="ic">
+                <i class="fa fa-bars" style="font-size:36px;color: white;"></i>
+            </div>
+        </label>
+        <div class="menu">
+            <ul>
+                <li class="link-page"><a class="home" href="home.html">Accueil</a></li>
+                <li class="link-page"><a class="resev" href="reservation.html">Réservation</a></li>
+                <li class="link-page"><a class="inscr" href="inscription.html">Inscription</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="slider">
+            <div id="slide-items">
+                <div id="items-active">
+                    <img id="slide" src="media/background/back.jpg">
+                </div> 
+            </div>
+        </div>
+            <i id="btns1" class="fa fa-angle-left" onclick="ChangeSlide()"></i>
+            <i id="btns2" class="fa fa-angle-right" onclick="ChangeSlide()"></i>
+        <div class="infos">   
+            <div class="Content">
+                <h1 class="titre1">Sonorisation <br>
+                    Matériel audio
+                </h1>
+                <p class="parag1">Préparer. Capter. 
+                    Mettre à disposition.
+                </p>
+                <a class="inscri-toi" href="inscription.html">Inscri-Toi</a>
+            </div> 
+        </div>
+    </section>
+    <div class="blank"></div>
+    <h1 class="service">Services</h1>
+    <div class="blank"></div>
+    <section class="article">    
+        <div class="camera-article">
+            <img class="img" src="media/services/camera.jpg" alt="">
+            <h1 class="camera-matariel">Matériel photo Pro</h1>
+            <div class="border"></div>
+            <p class="parag1">Découvrez notre sélection de matériel photo et équipez-vous des dernières nouveautés pour réaliser tous vos shootings <br>
+                et prises de vues. Faites votre choix parmi un large panel de références d'appareils numériques reflex et hybrides,<br>
+                 ajoutez une ou plusieurs optiques photo et complétez votre équipement photo avec de nombreux accessoires dédié<br>
+                  Retrouvez toute la gamme de matériel photo pro conçu par des grandes marques telles que Canon, Panasonic, Sony, Zeiss...</p>
+            <div class="services">
+                <h1>Notre sélection </h1>
+                <div class="border"></div>
+                <div class="reserv">
+                    <div class="items">
+                        <img src="media/png/camera1.png" alt="">
+                        <p class="infos">Camera 1</p>
+                        <p class="prix">700 DH</p>
+                        <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/camera2.png" alt="">
+                            <p class="infos">Camera 2</p>
+                            <p class="prix">700 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/camera3.png" alt="">
+                            <p class="infos">Camera 3</p>
+                            <p class="prix">700 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/camera4.png" alt="">
+                            <p class="infos">Camedra 4</p>
+                            <p class="prix">700 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/camera5.jpg" alt="">
+                            <p class="camera-infos">Camera 5</p>
+                            <p class="prix">700 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <section class="article">
+        <div class="blank"></div>
+        <div class="camera-article">
+            <img class="img" src="media/services/light.jpg" alt="">
+            <h1 class="camera-matariel">Eclairage Photo & Matériel d'éclairage Studio Photo</h1>
+            <div class="border"></div>
+            <p class="parag1">Créez votre propre lumière et ses jeux d'ombres en découvrant notre sélection de matériel d'éclairage, dédiée à l'univers du studio photo et de la vidéo. <br>
+                De la simple torche caméra, à la lumière continue douce et diffuse, souvent utilisée en studio...<br>
+                Sans oublier les accessoires dédiés type réflecteurs, diffuseurs, pieds lumière, clamps, mais aussi les systèmes d'incrustation sur fond vert... <br>
+                Laissez parler votre créativité et retrouvez les incontournables référénces des marques Kinoflo, Nanlite, CIneroid, Filex, Litepanels, Manfrotto et Avenger</p>
+            <div class="services">
+                <h1>Notre sélection </h1>
+                <div class="border"></div>
+                <div class="reserv">
+                    <div class="items">
+                        <img src="media/png/light1.jpg" alt="">
+                        <p class="infos">Eclairage Led 1</p>
+                        <p class="prix">500 DH</p>
+                        <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/ligh2.jpg" alt="">
+                            <p class="infos">Eclairage Led 2</p>
+                            <p class="prix">500 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/light3.jpg" alt="">
+                            <p class="infos">Eclairage Led 3</p>
+                            <p class="prix">500 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/light4.jpg" alt="">
+                            <p class="infos">Eclairage Led 4</p>
+                            <p class="prix">500 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/light5.jpg" alt="">
+                            <p class="camera-infos">Eclairage Led 5</p>
+                            <p class="prix">500 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>
+    <section class="article">
+        <div class="blank"></div>
+        <div class="camera-article">
+            <img class="img" src="media/services/audio.jpg" alt="">
+            <h1 class="camera-matariel">Matériel Audio Professionnel</h1>
+            <div class="border"></div>
+            <p class="parag1">Le son peut changer à jamais le rendu de votre réalisation, il est donc important <br>
+                 de ne pas le négliger. Complétez votre équipement en découvrant notre gamme <br>
+                de matériel audio professionnel, du simple micro filaire, aux systèmes audio sans fil, <br>
+                en passant par les enregistreurs et autres mixettes, sans oublier les tables de mixage lors de la post-production.<br>
+                Découvrez notre sélection de références incontournables sur le marché et faites votre choix.</p>
+            <div class="services">
+                <h1>Notre sélection </h1>
+                <div class="border"></div>
+                <div class="reserv">
+                    <div class="items">
+                        <img src="media/png/mic1.png" alt="">
+                        <p class="infos">Micophone 1</p>
+                        <p class="prix">400 DH</p>
+                        <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/mic2.png" alt="">
+                            <p class="infos">Microphone 2</p>
+                            <p class="prix">400 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/sono1.png" alt="">
+                            <p class="infos">Sonorisation 1</p>
+                            <p class="prix">400 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/sono2.png" alt="">
+                            <p class="infos">Sonorisation 2</p>
+                            <p class="prix">400 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/speaker.png" alt="">
+                            <p class="camera-infos">Speaker</p>
+                            <p class="prix">400 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <div class="blank"></div>
+    </section>
+
+    <section class="article">
+        <div class="camera-article">
+            <img class="img" src="media/services/drone.jpg" alt="">
+            <h1 class="camera-matariel">Drone</h1>
+            <div class="border"></div>
+            <p class="parag1">Découvrez notre sélection de matériel photo et équipez-vous des dernières nouveautés pour réaliser tous vos shootings <br>
+                et prises de vues. Faites votre choix parmi un large panel de références d'appareils numériques reflex et hybrides,<br>
+                 ajoutez une ou plusieurs optiques photo et complétez votre équipement photo avec de nombreux accessoires dédié<br>
+                  Retrouvez toute la gamme de matériel photo pro conçu par des grandes marques telles que Canon, Panasonic, Sony, Zeiss...</p>
+            <div class="services">
+                <h1>Notre sélection </h1>
+                <div class="border"></div>
+                <div class="reserv">
+                    <div class="items">
+                        <img src="media/png/drone1.png" alt="">
+                        <p class="infos">Drone 1</p>
+                        <p class="prix">1300 DH</p>
+                        <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/drone2.png" alt="">
+                            <p class="infos">Drone 2</p>
+                            <p class="prix">1300 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/drone3.png" alt="">
+                            <p class="infos">Drone 3</p>
+                            <p class="prix">1300 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/drone4.png" alt="">
+                            <p class="infos">Drone 4</p>
+                            <p class="prix">1300 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                    <div class="items">
+                            <img src="media/png/drone5.png" alt="">
+                            <p class="camera-infos">Drone5</p>
+                            <p class="prix">1300 DH</p>
+                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>
+    <div class="blank"></div>
+    <section class="reservation-fenetre" id="fenetre">
+        <br>
+        <button class="close" onclick="closes()" ><i class="fa fa-times"></i></button>
+        <h1 class="titre-R">Réservation</h1>
+        <br>
+        <forme class="reservation-forme">
+            
+            <div class="personelles-infos">
+                <h1 class="pers-infos">Personnelles Informaion</h1>
+                <div class="line">
+                    <div class="infos">
+                        <label class="titre">Nom</label>
+                        <input type="text" name="Nom" id="nom" placeholder="Nom" >
+                    </div>
+                    <div class="infos">
+                        <label class="titre">Prenom</label>
+                        <input type="text" name="Prenom" id="prenom" placeholder="Prenom" >
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="infos">
+                        <label class="titre">Email</label>
+                        <input type="text" name="Email" id="email" placeholder="email" >
+                    </div>
+                    <div class="infos">
+                        <label class="titre">Tele</label>
+                        <input type="text" name="Tele" id="tele" placeholder="Tele" >
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="infos">
+                        <label class="titre">Adresse</label>
+                        <input type="text" name="Adresse" id="adresse" placeholder="Adresse" >
+                    </div>
+                    <div class="infos">
+                        <label class="titre">Zip Code</label>
+                        <input type="text" name="Zipcode" id="zipcode" placeholder="Zipcode" >
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="reservation-details">
+                <h1 class="pers-infos">Réservation Detaile</h1>
+                <div class="line">
+                    <div class="infos">
+                        <label class="titre">De</label>
+                        <div>
+                            <input id="date1" type="date">
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <label class="titre">Jusqu'a</label>
+                        <div>
+                            <input id="date2" type="date">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button class="btn-reserv" type="submit" onclick="reserve()">Réserver</button>
+            <br>
+        </forme>
+    </section>
+    <section class="confirmation-fenetre" id="confermalert">
+        <br>
+        <button class="close" onclick="closes(),viders();" ><i class="fa fa-times"></i></button>
+        <h1 class="titre-R">Confirmation</h1>
+        <div id="affichage"></div>
+        <button class="btn-reserv" type="submit" onclick="confirmé(),viders();">Confirmer</button>
+        <br>
+    </section>
+    <div class="blank"></div>
+    <section class="footer">
+        <div class="colum2">
+            <div class="contact">
+                <h1>Nous contacter</h1>
+                <h2>Email : contact@medstudio.ma</h2>
+                <h2>Tel : +212 111 232 313  | +212 678 446 374</h2>
+                <h2>Adresse : 34, Rue Charam Achaykh | 20340 Casablanca, <br>
+                     Maroc </h2>
+                <div class="icons">
+                    <a class="icons" href=""><i class="fa fa-facebook-f"></i><i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <div class="copyright">
+        <p>©2020 Med Studio Maroc - Location Matériel Audiovisuel Pro </p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
