@@ -193,7 +193,7 @@
                             <img src="media/png/speaker.png" alt="">
                             <p class="camera-infos">Speaker</p>
                             <p class="prix">400 DH</p>
-                            <button class="reserv-btn" onclick="confirmation()">Reserve</button>
+                            <button class="reserv-btn" onclick="confirmation(),viders()">Reserve</button>
                     </div>
                 </div>      
             </div>
@@ -251,7 +251,7 @@
     <div class="blank"></div>
     <section class="reservation-fenetre" id="fenetre">
         <br>
-        <button class="close" onclick="closes()" ><i class="fa fa-times"></i></button>
+        <button class="close" onclick="closes(),viders()" ><i class="fa fa-times"></i></button>
         <h1 class="titre-R">Réservation</h1>
         <br>
         <forme class="reservation-forme">
@@ -308,7 +308,7 @@
                 </div>
             </div>
             <br>
-            <button class="btn-reserv" type="submit" onclick="reserve()">Réserver</button>
+            <button class="btn-reserv" type="submit" onclick="reserve(),viders()">Réserver</button>
             <br>
         </forme>
     </section>

@@ -68,7 +68,7 @@ function reserve(){
         }else{
             confermalert.style.display="block";
             fenetre.style.display="none";
-            affichage.innerHTML="Le Prenom est :" + prenom + "<br>" + "Le Nom est :" + nom + "<br>" + "Email est :" + email + "<br>" + "telephone est :" +tele +"<br>" +  "Adresse est :" + adresse + "<br>" + "Zip Code est :" + zipcode + "<br>" + "De :" + date1 + "<br>" + "Jusqu'a :" + date2 + "<br>";
+            affichage.innerHTML=" <span style='color:black'> Le Prenom est : </span>" + prenom + "<br>" + "<span style='color:black'>Le Nom est :</span>" + nom + "<br>" + "<span style='color:black'>Email est : </span>" + email + "<br>" + "<span style='color:black'>telephone est :</span>" +tele +"<br>" +  "<span style='color:black'> Adresse est :</span>" + adresse + "<br>" + "<span style='color:black'> Zip Code est :</span>" + zipcode + "<br>" + "<span style='color:black'>De :</span>" + date1 + "<br>" + "<span style='color:black'>Jusqu'a :</span>" + date2 + "<br>";
         }
     }
 }
