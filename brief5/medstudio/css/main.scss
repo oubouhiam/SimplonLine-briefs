@@ -237,37 +237,43 @@ body {
             flex-direction: column;
             height: auto;
         }
-        .prodcut{
+        .product{
             display: flex;
             flex-direction: column;
             margin: auto;
             margin-bottom: 20px;
+            margin-left: 5px;
+            @media (max-width: 900px){
+                margin: auto;
+            }
             .home-ser-img{
             width: 100%;
             margin-bottom: 20px;
             @media (max-width: 900px){
                 width: 100%;
             }
+        }
+        .cam-h2{
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        .btn-h-ser{
+            background-color: #DFB362;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            margin: 0 auto;
+            a{
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
             }
-            .cam-h2{
-                text-align: center;
+            @media (max-width: 900px){
                 margin-bottom: 10px;
             }
-            .btn-h-ser{
-                background-color: rgba(223, 179, 98, 0.877);
-                font-size: 17px;
-                text-align: center;
-                width: 100px;
-                height: 32px;
-                margin: 0 auto;
-            }
-            
 
         }
-        .prodcut{
-            width: 20%;
-            height: 600px;
-
         }
     }
         #btns1{

@@ -312,7 +312,7 @@ body .home-services {
   }
 }
 
-body .home-services .prodcut {
+body .home-services .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,36 +322,50 @@ body .home-services .prodcut {
           flex-direction: column;
   margin: auto;
   margin-bottom: 20px;
+  margin-left: 5px;
 }
 
-body .home-services .prodcut .home-ser-img {
+@media (max-width: 900px) {
+  body .home-services .product {
+    margin: auto;
+  }
+}
+
+body .home-services .product .home-ser-img {
   width: 100%;
   margin-bottom: 20px;
 }
 
 @media (max-width: 900px) {
-  body .home-services .prodcut .home-ser-img {
+  body .home-services .product .home-ser-img {
     width: 100%;
   }
 }
 
-body .home-services .prodcut .cam-h2 {
+body .home-services .product .cam-h2 {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
-body .home-services .prodcut .btn-h-ser {
-  background-color: rgba(223, 179, 98, 0.877);
-  font-size: 17px;
+body .home-services .product .btn-h-ser {
+  background-color: #DFB362;
   text-align: center;
   width: 100px;
-  height: 32px;
+  height: 30px;
   margin: 0 auto;
 }
 
-body .home-services .prodcut {
-  width: 20%;
-  height: 600px;
+body .home-services .product .btn-h-ser a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  body .home-services .product .btn-h-ser {
+    margin-bottom: 10px;
+  }
 }
 
 body #btns1 {
