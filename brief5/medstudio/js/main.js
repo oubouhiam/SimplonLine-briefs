@@ -1,4 +1,4 @@
-var slide = new Array("../media/background/back.jpg", "../media/background/backdrone.jpg", "../media/background/backfilm.jpg", "../media/background/backcamera.jpg" );
+var slide = new Array("media/background/back.jpg", "media/background/backdrone.jpg", "media/background/backfilm.jpg", "media/background/backcamera.jpg" );
   var numero = 0;
   var s=0;
 window.onload=function (){
