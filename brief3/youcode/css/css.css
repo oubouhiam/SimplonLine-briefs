@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* MY NORMALISE CSS */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    color: #6d6d6d;
+    font-size: 24px;
+    overflow-x: hidden;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+}
+.padding{
+    padding: 50px 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: Montserrat ,sans-serif;
+    cursor: pointer;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    padding: 10px 30px;
+    color: #6d6d6d;
+    border: none;
+    background: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+h1, h2, h3{
+    font-size: 36px;
+    font-family: Montserrat ,!important;
+    font-weight: 500;
+    letter-spacing: 1.28px;
+    margin: 20px 0 10px 0;
+}
+.material-icons{
+
+}
+/* CSS STYLE */
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+.navbar-brand{
+    display: flex;
+    float: left;
+    position: relative;
+}
+.navbar-brand a{
+    padding: 15px 0;
+    display: block;
+}
+.navbar-brand img{
+    width: 180px;
+}
+.navbar .navbar-menu{
+    float: right;
+    display: flex;
+    position: relative;
+    
+}
+.navbar .navbar-menu ul{
+    display: flex;
+}
+.navbar .navbar-menu ul li{
+    list-style: none;
+}
+.navbar .navbar-menu ul .link-page a{
+    transition: all .3s ease-in-out;
+    display: flex;
+    padding: 35px 15px !important;
+    text-transform: capitalize;
+    letter-spacing: normal !important;
+}
+.navbar .navbar-menu ul .link-page a:hover{
+    color: #44c5ee ;
+}
+.btn-blue{
+    background: #038dfe;
+    color: #fff;
+    margin-top: 23px;
+}
+.btn-blue:hover{
+    background: #fff !important;
+    color: #44c5ee !important;
+    transform: translateY(-3px);
+}
+.btn-trasparent{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-trasparent:hover{
+    background: #fff;
+    color: #496174;
+
+}
+.home{
+    position: relative;
+    padding: 150px 0 120px 0;
+}
+.home .slide{
+    width: 100%;
+}
+.home .slide figure{
+    background-image: url(../images/slider.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+}
+.home .home-heading h1{
+    color: #fff !important;
+    font-weight: 500;
+}
+.home .home-heading p{
+    color: #fff !important;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.home .home-heading .btn{
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.home .home-heading .btn-blue:hover{
+    color: #496174 !important;
+}
+section{
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+}
+.about{
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+}
+.about .about-heading{
+    position: relative;
+}
+.about .about-heading h2{
+    font-weight: 500;
+    color: #2b2b2b;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.about .about-heading p{
+    font-weight: 300;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.8px;
+    line-height: 25px;
+    padding-top: 25px;
+}
+.about .content{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about .content .col{
+    display: inline-block;
+    width: 30%;
+}
+.about .content .col .box{
+    margin-top: 60px;
+}
+.about .content .col .box i{
+    color: #038dfe;
+    font-size: 46px;
+}
+.about .content .col .box h3{
+    color:#496174;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.about .content .col .box p{
+    color: #000;
+    font-weight: 300;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.8px;
+    line-height: 25px;
+    padding-top: 25px;
+}
+.story{
+    margin-top: 80px;
+    background-color: #038dfe;
+}
+.story .content{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.story .content .col{
+    width: 50%;
+    height: 480px;
+    position: relative;
+}
+.story .content .col .story-slider{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.story .content .col .story-slider figure{
+    background-image: url(../images/ivent.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.story .content .col .story-content{
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+.story .content .col .story-content h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.story .content .col .story-content>p{
+    font-size: 18px;
+    margin: 25px 0;
+    color: #fff;
+    font-weight: normal;
+    font-family: Montserrat !important;
+    letter-spacing: 1.8px;
+    line-height: 25px;
+}
+.story .content .col .story-content .story-text p{
+    font-size: 14px;
+    margin: 25px 0;
+    color: #fff;
+    font-weight: 500;
+    font-family: Montserrat !important;
+    letter-spacing: 1.28px;
+    line-height: 30px;
+    text-align: left;
+}
+.simplon-img{
+    margin-top: 130px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.static2 {
+    background-color: rgb(0, 122, 255);
+    display: flex;
+    height: 35%;
+}
+
+
+.static {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: -7px;
+    padding: 60px 0;
+
+}
+.numbers {
+    width: 35%;
+    height: 65%;
+    text-align: center;
+    color: white;
+    font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.numbers {
+    border-right: 1.5px dashed black;
+    margin-top: 48px;
+}
+.static p:first-child {
+    font-weight: bold;
+}
+
+.simplon-paragraph {
+    width: 90%;
+    height: 400px;
+    margin: 20px 30px;
+    color: gray;
+    font-size: 20px;
+    font-family: montserrat, sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 250%;
+    margin-left: 100px;
+    display: block;
+}
+#tbold {
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+}
+.sponsored{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 75px;
+}
+.sponsored h1:first-child {
+    font-family: montserrat;
+    text-align: center;
+    color: black;
+}
+.sponsored #dd1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+.paraflex {
+    width: 50%;
+}
+#dd1{
+    display: flex;
+}
+.paraflex2 {
+    border: none;
+    background-color: rgb(0, 122, 255);
+    color: white;
+    padding: 10px 181px;
+    font-size: 25px;
+    border-radius: 30px;
+}
+.paraflex1 {
+    padding: 10px 110px;
+    font-size: 25px;
+    font-family: monospace;
+}
+.footer-distributed{
+    background-color: #000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    text-align: left;
+    font: bold 16px sans-serif;
+    color:#8f9296; 
+    font-size: 14px;
+    display: block;
+    margin-top: 140px;
+}
+.copyright {
+color:#8f9296;
+font-size: 14px;
+font-weight: normal;
+text-align: center;
+margin: 0;
+}
+.footer-icons{
+margin-right: 10px;
+text-align: right;
+}
